@@ -59,7 +59,7 @@ fn main() {
     let args: Vec<String> = env::args().collect();
     println!("Command line arguments: {:?}", args);
 
-    if args.len() < 2 {
+    if args.len() != 2 {
         eprintln!("Usage: {} <file_path>", args[0]);
         return;
     }
